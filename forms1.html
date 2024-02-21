@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Fom</title>
+    <style>
+      body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+
+img{
+   
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    
+}
+.flexbox{
+    
+        margin: auto;
+        width: 50%;
+        border: 5px solid black;
+        padding: 10px;
+      border-radius: 15px;
+      background-color: white;
+    
+
+      
+
+}
+.forms1{
+  margin: auto;
+        width: 50%;
+        border: 5px solid black;
+        padding: 10px;
+      border-radius: 15px;
+      background-color: white;
+
+}
+button{
+  border-radius: 10px;
+ 
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 10px;
+
+}
+.Submit {
+    
+  position: relative;
+  left: 45%;}
+ 
+    </style>
+</head>
+<body>
+    <header>
+    <img src="lastspider.png" width="800px" height="300px">
+</header>
+<main>
+   
+    <div class="flexbox"><div>Thank You For Improving our state </div>
+        
+   
+   <div>Please take a few minutes to provide a valuable feedback on your experience</div></div>
+   <br>
+   <br>
+   <div class="forms1">
+
+    <form name="submit-to-google-sheet">
+        
+         
+          <fieldset>
+            <legend>Accessibility</legend>
+            <label><input id="WORSE" type="radio" name="Accessibility" value="WORSE" checked> WORSE</label>
+            <label><input id="BAD" type="radio" name="Accessibility" value="BAD">BAD</label>
+            <label><input id="NORMAL" type="radio" name="Accessibility" value="NORMAL" checked> NORMAL</label>
+            <label><input id="GOOD" type="radio" name="Accessibility" value="GOOD">GOOD </label>
+            <label ><input type="radio" id="ERY GOODr" name="Accessibility" value="VERY GOOD">VERY GOOD</label>
+          </fieldset>
+          <br>
+          <br>
+          <br>
+          <fieldset>
+            <legend>Ease Of Use</legend>
+            <label><input id="verybad" type="radio" name="Ease Of Use" value="WORSE" checked> WORSE</label>
+            <label><input id="bad" type="radio" name="Ease Of Use" value="BAD">BAD</label>
+            <label><input id="normal" type="radio" name="Ease Of Use" value="NORMAL" checked> NORMAL</label>
+            <label><input id="good" type="radio" name="Ease Of Use" value="GOOD">GOOD </label>
+            <label ><input type="radio" id="very good" name="Ease Of Use" value="VERY GOOD">VERY GOOD</label>
+          </fieldset>
+          <br>
+          <br>
+          <br>
+          <fieldset>
+            <legend>Customer Service</legend>
+            <label><input id="worse" type="radio" name="Customer Service" value="WORSE" checked> WORSE</label>
+            <label><input id="notworse" type="radio" name="Customer Service" value="BAD">BAD</label>
+            <label><input id="ok" type="radio" name="Customer Service" value="NORMAL" checked> NORMAL</label>
+            <label><input id="justgood" type="radio" name="Customer Service" value="GOOD">GOOD </label>
+            <label ><input type="radio" id="betterthenexpectation" name="Customer Service" value="VERY GOOD">VERY GOOD</label>
+          </fieldset>
+          <br>
+          <br>
+          <br>
+
+          <fieldset>
+            <legend>Satisfaction</legend>
+            <label><input id="Worse" type="radio" name="Satisfaction" value="WORSE" checked> WORSE</label>
+            <label><input id="Notworse" type="radio" name="Satisfaction" value="BAD">BAD</label>
+            <label><input id="Ok" type="radio" name="Satisfaction" value="NORMAL" checked> NORMAL</label>
+            <label><input id="justgood" type="radio" name="Satisfaction" value="GOOD">GOOD </label>
+            <label ><input type="radio" id="Betterthenexpectation" name="Satisfaction" value="VERY GOOD">VERY GOOD</label>
+          </fieldset>
+          <br>
+          <br>
+          <br>
+
+          <fieldset>
+            <legend>Would You Like to Recommend Us To Others</legend>
+            <label><input id="Definitely" type="radio" name="Recommend" value="Definitely">Definitely</label>
+            <label><input id="Yes" type="radio" name="Recommend" value="YES" checked>Yes</label>
+            <label><input id="Maybe" type="radio" name="Recommend" value="Maybe">Maybe</label>
+          </fieldset>
+          <br>
+
+          <div class="Submit">
+          <button onclick="alert1()" type="submit"> Submit</button>
+        </div>
+
+    </form>
+   </div>
+   <script>
+    function alert1(){
+      alert("The Form Has been Submitted")
+    }
+    
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwRCkW6y0BcM2m3tlDi9PdoJ0OycdKBKvoO5fI5cMleHwry96ixq9sP8W9dyjy1sMKR/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+   </script>
+    
+   
+</main>
+    
+    
+</body>
+</html>
+
+

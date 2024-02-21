@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Form</title>
+    <style>
+    body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+    img{
+       
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;}
+        
+    .position1, .position2{
+        margin: auto;
+        width: 50%;
+        border: 5px solid black;
+        padding: 10px;
+      border-radius: 15px;
+      background-color: white;
+    }
+    .form{
+        margin: auto;
+        width: 50%;
+        border: 5px solid black;
+        padding:10px;
+        border-radius: 15px;
+        background-color: white;
+    }
+    button{
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        padding-left: 10px;
+        font-size: large;
+    
+    }
+    .Submit {
+        
+        position: relative;
+        left: 45%;
+      }</style>
+</head>
+<body>
+    <header>
+
+        <div class="simage">
+            <img src="lastspider.png" alt="You are unable to access the  image" width="800">
+       
+    </div>
+    </header>
+ <main>
+        <div class="form">
+<fieldset>
+       <legend>Name</legend>
+            <form name="submit-to-google-sheet" target="_blank"  >
+                <label>
+                        <input type="text" name="Name"  placeholder="Enter Your Name" required width="600px">
+                  </label>
+                </fieldset>
+<fieldset>
+                    <legend>Email-id: </legend>
+                    <label > <input type="text" placeholder="Enter The Email-id" required name="Email-id"></label>
+                </fieldset>
+                 <fieldset>
+    <legend>Phone Number</legend>
+                  <label><input type="text" placeholder="Phone Number" required name="Phone_Number"></label>
+                </fieldset>
+                 <fieldset>
+                    <legend>Address</legend>
+                  <label><select name="city" id="city" name="city">
+                    <option value="Select">Select</option>
+                        <option value="Anantapur">Anantapur</option>
+                        <option value="Chittoor">Chittoor</option>
+                        <option value="East Godavari">East Godavari</option>
+                        <option value="Guntur">Guntur</option>
+                        <option value="Krishna">Krishna</option>
+                        <option value="Nellore">Nellore</option>
+                        <option value="Prakasam">Prakasam</option>
+                        <option value="Srikakulam">Srikakulam</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Vizianagaram">Vizianagaram</option>
+                        <option value="West Godavari">West Godavari</option>
+                        <option value="Kurnool">Kurnool</option>
+                        <option value="YSR Kadapa">YSR Kadapa</option>
+                    </select></label>
+                </fieldset>
+                 <fieldset>
+                    <legend>Date Of Complaints</legend>
+            <label><input type="date" placeholder=" Date Of Complaints" name="date_of_complaints" required></label>
+        </fieldset>
+       
+            <fieldset>
+               <legend>Enter The Complaints</legend>
+               <label>
+                <input type="text" placeholder="Complaints" required name="enter_the_Complaints"></label></fieldset>
+                <fieldset>
+                    <legend>Place Of Issue</legend>
+              <label><input type="text" placeholder="Place Of Issue" name="place_of_issue" required>
+              </label>
+            </fieldset>
+            <fieldset>
+            <legend>Would You Like To Suggest a Solution</legend>
+                <label ><input type="text" placeholder="Prescribed Solutions" name="solution"></label>
+        </fieldset>
+        
+        <br>
+        <div class="Submit">
+            <button type="submit" onclick="alert1()">Submit</button>
+        </div>
+          <br>
+           <div class="postion1">Never Submit passwords through Any Forms</div>
+           <div class="postion2">This content is not endorsed by <B> TECH MASTER</B></div>
+            <script>
+                function alert1(){
+                    alert("Your Problem Has been Noticed");
+                }
+                
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwPtsQGv5XU6Ei1XesZIdZ8g_2zSdnYUb-4NYIbdB9WUhCDxOpkDo0DkL_QBQri-E2IuQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+            </script>
+            </div>
+            
+
+
+
+
+
+        </form>
+        </div>
+    </main>
+    
+
+    
+</body>
+</html>
+
+<!-- 
+name
+addresss
+phone number
+email id
+calender
+place of issue -->
